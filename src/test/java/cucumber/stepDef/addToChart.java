@@ -55,5 +55,5 @@ public class addToChart {
     public void userDirectedToCheckoutInformation() {
         driver.findElement(By.xpath("//span[contains(text(), 'Checkout: Your Information')]"));
     }
-    //hana
+//hana
 }
