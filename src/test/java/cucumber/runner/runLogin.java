@@ -2,13 +2,15 @@ package cucumber.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.checkerframework.checker.index.qual.Positive;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/cucumber/features",
         glue = "cucumber.stepDef",
-        plugin = {"html:target/HTML_report.html"}
+        plugin = {"html:target/HTML_report.html"},
+        tags = "@Positive"
 )
 public class runLogin {
 }

@@ -1,4 +1,5 @@
-Feature: Login aplikasi saucedemo
+Feature: Login website saucedemo
+
   Scenario: User can login using registered username and password
     Given Login page saucedemo
     When User input registered username
